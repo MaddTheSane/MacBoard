@@ -4,6 +4,17 @@
 //  The contents of this file are implicitly included at the beginning of every source file.
 //
 
+#define Boolean MacBoolean
+#define Comment AIFFComment
+#include <CoreServices/CoreServices.h>
+#include <ApplicationServices/ApplicationServices.h>
+#undef Boolean
+#undef Comment
+
+#include "config.h"
+#include "common.h"
+#include "backend.h"
+
 #ifdef __OBJC__
 	#import <Cocoa/Cocoa.h>
 #endif

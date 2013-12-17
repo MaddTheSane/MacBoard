@@ -115,8 +115,23 @@
 		554B09921860EE0F008B1DCD /* uci.c in Sources */ = {isa = PBXBuildFile; fileRef = 554B06621860EC04008B1DCD /* uci.c */; };
 		554B09931860EE22008B1DCD /* pgntags.c in Sources */ = {isa = PBXBuildFile; fileRef = 554B05121860EC03008B1DCD /* pgntags.c */; };
 		554B09961860EE83008B1DCD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 554B09981860EE83008B1DCD /* MainMenu.xib */; };
-		554B099A1860F13E008B1DCD /* backend.c in Sources */ = {isa = PBXBuildFile; fileRef = 554B04C41860EC03008B1DCD /* backend.c */; };
-		554B099B1860F226008B1DCD /* menus.c in Sources */ = {isa = PBXBuildFile; fileRef = 554B05051860EC03008B1DCD /* menus.c */; };
+		554B099C1860F295008B1DCD /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 554B05101860EC03008B1DCD /* parser.c */; };
+		554B099D1860F298008B1DCD /* nhistory.c in Sources */ = {isa = PBXBuildFile; fileRef = 554B050F1860EC03008B1DCD /* nhistory.c */; };
+		554B099E1860F29D008B1DCD /* ngamelist.c in Sources */ = {isa = PBXBuildFile; fileRef = 554B050E1860EC03008B1DCD /* ngamelist.c */; };
+		554B099F1860F2A7008B1DCD /* nevalgraph.c in Sources */ = {isa = PBXBuildFile; fileRef = 554B050C1860EC03008B1DCD /* nevalgraph.c */; };
+		554B09A01860F2AD008B1DCD /* nengineoutput.c in Sources */ = {isa = PBXBuildFile; fileRef = 554B050B1860EC03008B1DCD /* nengineoutput.c */; };
+		554B09A11860F2B1008B1DCD /* moves.c in Sources */ = {isa = PBXBuildFile; fileRef = 554B05091860EC03008B1DCD /* moves.c */; };
+		554B09A21860F2BA008B1DCD /* lists.c in Sources */ = {isa = PBXBuildFile; fileRef = 554B04F71860EC03008B1DCD /* lists.c */; };
+		554B09A31860F2BE008B1DCD /* history.c in Sources */ = {isa = PBXBuildFile; fileRef = 554B04F31860EC03008B1DCD /* history.c */; };
+		554B09A41860F2D0008B1DCD /* gamelist.c in Sources */ = {isa = PBXBuildFile; fileRef = 554B04EA1860EC03008B1DCD /* gamelist.c */; };
+		554B09A51860F2D8008B1DCD /* FAQ.html in Resources */ = {isa = PBXBuildFile; fileRef = 554B04E81860EC03008B1DCD /* FAQ.html */; };
+		554B09A61860F2E4008B1DCD /* evalgraph.c in Sources */ = {isa = PBXBuildFile; fileRef = 554B04E61860EC03008B1DCD /* evalgraph.c */; };
+		554B09A71860F2E9008B1DCD /* engineoutput.c in Sources */ = {isa = PBXBuildFile; fileRef = 554B04E41860EC03008B1DCD /* engineoutput.c */; };
+		554B09A91860F2F8008B1DCD /* dialogs.c in Sources */ = {isa = PBXBuildFile; fileRef = 554B04DE1860EC03008B1DCD /* dialogs.c */; };
+		554B09AA1860F304008B1DCD /* childio.c in Sources */ = {isa = PBXBuildFile; fileRef = 554B04CF1860EC03008B1DCD /* childio.c */; };
+		554B09AB1860F308008B1DCD /* book.c in Sources */ = {isa = PBXBuildFile; fileRef = 554B04CD1860EC03008B1DCD /* book.c */; };
+		554B09AC1860F30C008B1DCD /* board.c in Sources */ = {isa = PBXBuildFile; fileRef = 554B04CB1860EC03008B1DCD /* board.c */; };
+		554B09AD1860F6E6008B1DCD /* xboard.c in Sources */ = {isa = PBXBuildFile; fileRef = 554B091B1860EC09008B1DCD /* xboard.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1345,6 +1360,7 @@
 				554B097B1860ED74008B1DCD /* kibitz.wav in Resources */,
 				554B09501860ED4E008B1DCD /* WhiteAdvisor.png in Resources */,
 				554B093F1860ED4E008B1DCD /* BlackGoldLance.png in Resources */,
+				554B09A51860F2D8008B1DCD /* FAQ.html in Resources */,
 				554B093A1860ED4E008B1DCD /* BlackCrownedBishop.png in Resources */,
 				554B09781860ED74008B1DCD /* drip.wav in Resources */,
 				554B095C1860ED4E008B1DCD /* WhiteGoldLance.png in Resources */,
@@ -1429,14 +1445,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				554B099B1860F226008B1DCD /* menus.c in Sources */,
+				554B09AC1860F30C008B1DCD /* board.c in Sources */,
+				554B099D1860F298008B1DCD /* nhistory.c in Sources */,
 				554B09921860EE0F008B1DCD /* uci.c in Sources */,
+				554B09A71860F2E9008B1DCD /* engineoutput.c in Sources */,
 				554B09901860EE01008B1DCD /* usystem.c in Sources */,
 				554B09931860EE22008B1DCD /* pgntags.c in Sources */,
+				554B099F1860F2A7008B1DCD /* nevalgraph.c in Sources */,
+				554B099C1860F295008B1DCD /* parser.c in Sources */,
+				554B09AB1860F308008B1DCD /* book.c in Sources */,
 				554B04981860EBAE008B1DCD /* main.m in Sources */,
 				554B049F1860EBAE008B1DCD /* MBAppDelegate.m in Sources */,
-				554B099A1860F13E008B1DCD /* backend.c in Sources */,
+				554B09A21860F2BA008B1DCD /* lists.c in Sources */,
+				554B099E1860F29D008B1DCD /* ngamelist.c in Sources */,
+				554B09A41860F2D0008B1DCD /* gamelist.c in Sources */,
+				554B09AD1860F6E6008B1DCD /* xboard.c in Sources */,
+				554B09A11860F2B1008B1DCD /* moves.c in Sources */,
+				554B09A31860F2BE008B1DCD /* history.c in Sources */,
 				554B09911860EE05008B1DCD /* usounds.c in Sources */,
+				554B09AA1860F304008B1DCD /* childio.c in Sources */,
+				554B09A61860F2E4008B1DCD /* evalgraph.c in Sources */,
+				554B09A91860F2F8008B1DCD /* dialogs.c in Sources */,
+				554B09A01860F2AD008B1DCD /* nengineoutput.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
